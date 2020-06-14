@@ -1,0 +1,65 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Jun 14 15:39:36 2020
+
+@author: yanzhen
+"""
+# login with SingPass through user information
+id_start = str(input("First letter of ID number: ") 
+id_numbers = int(input("Series of numbers of ID number: "))
+id_last = str(input("Last letter of ID number: ") 
+id_of_user = id_start + id_numbers + id_last 
+password = str(input("Enter your password: "))
+
+#  input by users on details of events 
+def retrieve_data(,):
+    what_1 = str(input(“What are you reporting? Choose one of the options: “))
+    # options are fire, covidcase, others 
+    if what_1 = “fire”:
+        where_1 = str(input(“Where is the event? ”))
+        photo_1 = str(input(“Please help insert the best photo of the location of the incident. These are some examples of photos.”))
+        return where_1
+    elif what_1 = “covidcase”:
+        where_last_visit_1 = int(input(“Where did you last visit? “))
+        time_last_visit_1 = int(input(“When did you last visit that place? ”))
+        return where_last_visit_1
+    else what_1 = "othercase":
+        what_happened = str(input("Description of what happened: "))
+        where_happened = str(input("Description of where it happened: "))
+        return where_happened
+        
+        
+# vetting by worker who confirms legitimacy of event posted by user
+
+
+# demarcation of red areas on the map to notify users
+from termcolor import cprint
+
+area = str(input(‘Area affected: ‘))
+
+for i in area:
+    if i = True:
+        cprint(colored(‘Red zone’,’red’))
+    else:
+        int(colored(‘Safe zone’,’green’))
+        
+# chatbot to reply to questions users have 
+help_user = str(input(“How can I help you?”))
+# if question is related to whether a certain area is safe
+a = safe
+if where_1 != safe:
+    print (“Please avoid ” + where_1 + “! Thank you!”)
+elif where_last_visit_1 != safe: 
+    print (“Please avoid ” + where_last_visit_1  + “! Thank you!”)
+else where_happened!= safe:
+    print (“Please avoid ” + where_happened  + “! Thank you!”)
+
+
+# app in written and audio format 
+# several languages available 
+
+
+
+
+    
